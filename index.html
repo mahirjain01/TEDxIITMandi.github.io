@@ -16,6 +16,8 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -26,46 +28,39 @@
     <!-- /Preloader -->
 
     <!-- Header Area Start -->
-    <header class="header-area">
-        <div class="classy-nav-container breakpoint-off">
-            <div class="container">
-                <!-- Classy Menu -->
-                <nav class="classy-navbar justify-content-between" id="conferNav">
-
-                    <!-- Logo -->
-                    <a class="nav-brand" href="./index.html"><img src="./img/iitmandi.png" width="230rem" height="200rem"
-                            alt=""></a>
-
-                    <!-- Navbar Toggler -->
-                    <div class="classy-navbar-toggler">
-                        <span class="navbarToggler"><span></span><span></span><span></span></span>
-                    </div>
-
-                    <!-- Menu -->
-                    <div class="classy-menu">
-                        <!-- Menu Close Button -->
-                        <div class="classycloseIcon">
-                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                        </div>
-                        <!-- Nav Start -->
-                        <div class="classynav">
-                            <ul id="nav">
-                                 <li class="active"><a href="index.html">Home</a></li>
-                            
-                                <li><a href="speakers.html">Speakers</a></li>
-                                <li><a href="team/2021.html">Team</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-                        <!-- Nav End -->
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
+ 
     <!-- Header Area End -->
 
     <!-- Welcome Area Start -->
+
+    <section id="home" class="home-cover">
+
+        <div class="sparkle">
+            <ul data-time="750">
+                <li data-saturation="0" data-lightness="100">IIT</li>
+            </ul>
+            <ul data-time="750">
+                <li data-saturation="0" data-lightness="100">MANDI</li>
+            </ul>
+            <ul data-time="750">
+                <li data-saturation="0" data-lightness="100">PRESENTS</li>
+            </ul>
+            <ul data-time="750">
+                <li data-saturation="0" data-lightness="100">TEDxIITMANDI</li>
+            </ul>
+
+            <ul data-time="1500">
+                <li data-hue="197">1</li>
+                <li data-hue="197">7</li>
+                <li data-hue="0">x</li>
+                <li data-hue="197">A</li>
+                <li data-hue="197">P</li>
+                <li data-hue="197">R</li>
+            </ul>
+        </div>
+        <canvas></canvas>
+    </section>
+
     <section class="welcome-area">
         <div class="welcome-slides owl-carousel">
             <!-- Single Slide -->
@@ -75,11 +70,11 @@
                     <div class="row h-100 align-items-center">
                         <!-- Welcome Text -->
                         <div class="col-12">
-                            <div class="welcome-text text-right">
-                                <h2 data-animation="fadeInUp" data-delay="300ms">TEDxIITMandi<br>2023</h2>
-                                <h6 data-animation="fadeInUp" data-delay="500ms">IIT Mandi</h6>
+                            <div class="welcome-text">
                                 <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
-                              
+                                <video width="1240px" height="600px"  preload="auto"  autoplay muted />
+                                    <source src="img/vid.mp4" type="video/mp4">
+                                </video>
                                 </div>
                             </div>
                         </div>
@@ -118,7 +113,7 @@
                 </div>
             </div>
         </div>
-
+      
     <!-- Our Speakings Area Start -->
     <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60"
         style="background-image: url(img/bg-img/3.jpg);">
@@ -135,36 +130,8 @@
 
             <div class="row align-items-center">
                 <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/2021_speakers/Taufiq-Qureshi.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <!-- <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                                <a href="https://www.instagram.com/tedxpvgcoet/"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div> -->
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Taufiq Qureshi</h5>
-                            <!-- <p>Announcing soon</p> -->
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area wow fadeInUp" data-wow-delay="300ms">
-                        <div class="more-speaker-btn text-center mt-20 mb-40 wow fadeInUp" data-wow-delay="300ms">
-                            <a class="btn confer-btn-white" href="speakers.html">View Details <i
-                                    class="zmdi zmdi-long-arrow-right"></i></a>
-                        </div>
-                    </div>
+                <div class = "container">
+                    <h1>COMING SOON</h1>
                 </div>
             </div>
         </div>
@@ -190,7 +157,7 @@
                     <div class="contact-information mb-100">
                         <!-- Single Contact Info -->
                         <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
-                            <p>Address:</p>
+                            <p>Address:</p> 
                             <h6>IIT Mandi<br>Kamand, Near Mandi, Himachal Pradesh, 175005</h6>
                         </div>
                         <!-- Single Contact Info -->
@@ -269,125 +236,60 @@
         </div>
     </section>
     <!-- Contact Area End -->
+<div class="wrapper">
+    <a class="cta" href="/team/2021.html">
+      <span>MEET THE TEAM</span>
+      <span>
+        <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+            <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+            <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+          </g>
+        </svg>
+      </span> 
+    </a>
+  </div>
+<br><br><br>
 
    <!-- Footer Area Start -->
-    <footer class="footer-area bg-img bg-overlay-2 section-padding-100-0">
-        <!-- Main Footer Area -->
-        <div class="main-footer-area">
-            <div class="container">
-                <div class="row">
-                    <!-- Single Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-60">
-                            <!-- Footer Logo -->
-                            <a href="#" class="footer-logo"><img src="img/core-img/logo.png" alt=""></a>
-                            <p>In the spirit of 'Ideas Worth Spreading', TED has created TEDx, which is a program of local, self-organized events that bring people together to share a TED-like experience. Our event is called TEDxIITMandi where x = independently organized TED event.</p>
+   <footer class="footer-distributed">
+   
+               <div class="footer-left">
+   
+                <img src="./img/iitmandi.png" width="230rem" height="200rem">
 
-                            <!-- Social Info -->
-                            <div class="social-info">
-                                <a href="https://www.facebook.com/TEDxPVGCOET/"><i class="zmdi zmdi-facebook"></i></a>
-                                    <a href="https://www.instagram.com/tedxpvgcoet/"><i class="zmdi zmdi-instagram"></i></a>
-                                <a href="https://twitter.com/tedxpvgcoet"><i class="zmdi zmdi-twitter"></i></a>
-                                <a href="https://www.linkedin.com/company/tedxpvgcoet"><i class="zmdi zmdi-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                <p class="footer-company-about">
+                    <span>About the company</span>
+                    Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                </p>
 
-                    <!-- Single Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-60">
-                            <!-- Widget Title -->
-                            <h5 class="widget-title">Contact</h5>
+                <div class="footer-icons">
 
-                            <!-- Contact Area -->
-                            <div class="footer-contact-info">
-                                <p><i class="zmdi zmdi-map"></i>IIT Mandi<br>Kamand, Near Mandi, Himachal Pradesh, 175005 </p>
-                                <!-- <p><i class="zmdi zmdi-phone"></i> (226) 446 9371</p> -->
-                                <p><i class="zmdi zmdi-email"></i><a href="mailto:tedx@iitmandi.ac.in" style="color: white;">tedx@iitmandi.ac.in</a></p>
-                                <p><i class="zmdi zmdi-globe"></i><a href="https://tedxiitmandi.com" style="color: white;">tedxiitmandi.com</a></p>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
 
-                    <!-- Single Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-60">
-                            <!-- Widget Title -->
-                            <h5 class="widget-title">Site links</h5>
-
-                            <!-- Footer Nav -->
-                            <ul class="footer-nav">
-                                <li><a href="/index.html">Home</a></li>
-                                <li><a href="/speakers.html">Speakers</a></li>
-                                <li><a href="/team/2021.html">Team</a></li>
-                                <li><a href="/contact.html">Contact</a></li>
-                                <li><a href="https://forms.gle/9C6kJ9fZWa4o8gLa9">Register</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Single Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-60">
-                            <!-- Widget Title -->
-                            <h5 class="widget-title">Gallery</h5>
-
-                            <!-- Footer Gallery -->
-                            <div class="footer-gallery">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <a href="img/bg-img/21.jpg" class="single-gallery-item"><img src="img/bg-img/21.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="img/bg-img/22.jpg" class="single-gallery-item"><img src="img/bg-img/22.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="img/bg-img/23.jpg" class="single-gallery-item"><img src="img/bg-img/23.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="img/bg-img/24.jpg" class="single-gallery-item"><img src="img/bg-img/24.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="img/bg-img/25.jpg" class="single-gallery-item"><img src="img/bg-img/25.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="img/bg-img/26.jpg" class="single-gallery-item"><img src="img/bg-img/26.jpg" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- Copyright Area -->
-        <div class="container">
-            <div class="copywrite-content">
-                <div class="row">
-                    <!-- Copyright Text -->
-                    <div class="col-12 col-md-6">
-                        <div class="copywrite-text">
-                           <p> &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved. • Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by TEDxPVGCOET</p>
-                        </div>
-                    </div>
-                    <!-- Footer Menu -->
-                    <div class="col-12 col-md-6">
-                        <div class="footer-menu">
-                            <ul class="nav">
-                                <li><a href="https://www.ted.com/about/our-organization/our-policies-terms"><i class="zmdi zmdi-circle"></i> Policies + Terms </a></li>
+               </div>
+   
+               <div class="footer-center">
+   
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3391.819657413169!2d76.9838860154673!3d31.77540434168274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3904e36054b1fd81%3A0xc3174a90dec9f339!2sIndian%20Institute%20Of%20Technology%E2%80%93Mandi%20(IIT%E2%80%93Mandi)!5e0!3m2!1sen!2sin!4v1679341872610!5m2!1sen!2sin" width="900" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+               </div>
+   
+           </footer>
 
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
     <!-- Footer Area End -->
 
     <!-- **** All JS Files ***** -->
     <!-- jQuery 2.2.4 -->
+
+    <script src="js/title.js"></script>
+
     <script src="js/jquery.min.js"></script>
     <!-- Popper -->
     <script src="js/popper.min.js"></script>
