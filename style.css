@@ -1719,6 +1719,40 @@ input:required {
   .single-welcome-slide .welcome-text {
     position: relative;
     z-index: 1; }
+
+    .single-welcome-slide .welcome-text h1{
+      display: inline-block;
+      color: rgb(255, 38, 38);
+      font-family: 'Righteous', serif;
+      font-size: 5em; 
+      text-shadow: .03em .03em 0 rgb(255, 255, 255);
+    }
+    .single-welcome-slide .welcome-text h1:after {
+      content: attr(data-shadow);
+      position: absolute;
+      top: .06em; left: .06em;
+      z-index: -1;
+      text-shadow: none;
+      background-image:
+        linear-gradient(
+          45deg,
+          transparent 45%,
+          hsla(48,20%,90%,1) 45%,
+          hsla(48,20%,90%,1) 55%,
+          transparent 0
+          );
+      background-size: .05em .05em;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    
+      animation: shad-anim 15s linear infinite;
+      }
+
+      @keyframes shad-anim {
+        0% {background-position: 0 0}
+        0% {background-position: 100% -100%}
+        }
+  
     .single-welcome-slide .welcome-text h2 {
       position: relative;
       z-index: 1;
@@ -3755,19 +3789,6 @@ path.two {
 }
 
 
-.container h1{
-  opacity: 0;
-  font-family: "Work Sans", sans-serif;
-  margin: 0 auto auto auto;
-  background: linear-gradient(to right, #000000, #554c4d, #756f71);
-  font-weight: 800;
-  font-size: 100px;  
-  width: 450px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  overflow: hidden;
-  animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
-}
 
 @keyframes shring-animation {
   0% {
