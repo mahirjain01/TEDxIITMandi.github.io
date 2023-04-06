@@ -1758,7 +1758,6 @@ input:required {
       z-index: 1;
       font-weight: 700;
       font-size: 90px;
-      text-transform: uppercase;
       display: block;
       margin-bottom: 10px;
       color: #ffffff; }      
@@ -4211,10 +4210,10 @@ svg {
   color: #fff;
   cursor: pointer;
   display: block;
-  font-size: 16px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 45px;
-  max-width: 160px;
+  max-width: 420px;
   margin: 0 auto 2em;
   position: relative;
   text-transform: uppercase;
