@@ -4011,10 +4011,31 @@ path.two {
 		margin-bottom: 40px;
 		text-align: center;
 	}
+  .footer-center{
+    width:900px;
+  }
 
 	.footer-distributed .footer-center i{
 		margin-left: 0;
 	}
+  @media (min-width: 500px) {
+    .footer-center {
+      width:500px;
+    }
+    
+  }
+
+  .gmap{
+    width: 900px;
+  }
+
+  @media (min-width: 500px) {
+    .gmap {
+      width:400px;
+    }
+    
+  }
+
 
 }
 
