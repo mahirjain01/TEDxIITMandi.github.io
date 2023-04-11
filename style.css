@@ -1528,7 +1528,7 @@ input:required {
     padding: 0; }
     @media only screen and (max-width: 767px) {
       .classy-nav-container .classy-navbar .nav-brand {
-        max-width: 90px;
+        max-width: 805x;
         margin-right: 15px; } }
     .classy-nav-container .classy-navbar .classynav ul li a {
       font-size: 16px;
@@ -1816,7 +1816,10 @@ input:required {
           font-size: 60px; } }
       @media only screen and (max-width: 767px) {
         .single-welcome-slide .welcome-text h2 {
-          font-size: 30px; } }
+          font-size: 28px; } }
+        @media only screen and (max-width: 767px) {
+            .single-welcome-slide .welcome-text h1 {
+              font-size: 28px; } }
       @media only screen and (min-width: 480px) and (max-width: 767px) {
         .single-welcome-slide .welcome-text h2 {
           font-size: 42px; } }
@@ -3759,6 +3762,27 @@ path.two {
     animation: color_anim 1s infinite 0.4s;
 }
 
+@media (max-width: 880px) {
+  .wrapper{
+    width: 100px;
+  }
+  .cta{
+    width:10px;
+  }
+  .cta {
+    display: flex;
+    padding: 10px 450px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: white;
+    background: #ff051e;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+}
+}
+
 /* SVG animations */
 
 @keyframes color_anim {
@@ -3900,7 +3924,7 @@ path.two {
 	background-color:  #33383b;
 	color: #ffffff;
 	font-size: 25px;
-	width: 38px;
+	width: 30px;
 	height: 38px;
 	border-radius: 50%;
 	text-align: center;
@@ -4008,7 +4032,7 @@ path.two {
 		text-align: center;
 	}
   .footer-center{
-    width:900px;
+    width:100px;
   }
 
 	.footer-distributed .footer-center i{
@@ -4016,23 +4040,16 @@ path.two {
 	}
   @media (min-width: 500px) {
     .footer-center {
-      width:500px;
+      width: 100px;
     }
     
   }
-
-  .gmap{
-    width: 900px;
-  }
-
-  @media (min-width: 500px) {
-    .gmap {
-      width:400px;
-    }
-    
-  }
-
-
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 /* Pen by ArcSinDesign.com- Follow https://codepen.io/BoiseDigital/ */
